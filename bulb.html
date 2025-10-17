@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+    </style>
+</head>
+<body>
+    <img src="bulboff.jpg" class="img" id="bulb" alt="" height="300px"
+    width="300px">
+    <button id="on">on</button>
+    <button id="off">off</button>
+    <button id="red">red </button>
+    
+    <script>
+var bulb=document.getElementById("bulb")
+var on=document.getElementById("on")
+var off=document.getElementById("off")
+var red=document.getElementById("red")
+on.addEventListener("click",function(){
+    bulb.src="newbulb.jpg"
+    
+})
+off.addEventListener("click",function(){
+    bulb.src="bulboff.jpg"
+})
+
+red.addEventListener("click",function(){
+    bulb.src=""
+})
+
+    </script>
+</body>
+</html>
